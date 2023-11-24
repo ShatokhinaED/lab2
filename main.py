@@ -17,7 +17,7 @@ class WebPageViewer(QMainWindow): #создала коммит
 
         self.timer = QTimer(self)
         self.timer.timeout.connect(self.show_next_page)
-        self.timer.start(self.interval_seconds * 1000)  # Перевод в миллисекунды
+        self.timer.start(self.interval_seconds * 1000)  # Переводим в миллисекунды
 
         self.show_next_page()
 
@@ -30,7 +30,7 @@ class WebPageViewer(QMainWindow): #создала коммит
     def add_website(self, url, interval):
         new_website = {'url': url, 'interval': interval}
         self.urls.append(new_website)
-        self.timer.start(self.interval_seconds * 1000)  # Запустить таймер, если он был остановлен
+        self.timer.start(self.interval_seconds * 1000)  # Запуск таймера, если он был остановлен
 
     def remove_website(self, index):
         if 0 <= index < len(self.urls):
