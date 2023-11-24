@@ -4,7 +4,7 @@ from PyQt6.QtWidgets import QApplication, QMainWindow, QVBoxLayout, QWidget, QIn
 
 from PyQt6.QtWebEngineWidgets import QWebEngineView
 
-class WebPageViewer(QMainWindow): #создан коммит
+class WebPageViewer(QMainWindow): #создала коммит
     def init(self, interval_seconds=5):
         super().init()
 
